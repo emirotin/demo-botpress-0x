@@ -1,0 +1,29 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 6.1 < 9"
+  },
+  "dependencies": {
+    "botpress": "10.22.0",
+    "@botpress/audience": "10.22.0",
+    "@botpress/builtins": "10.22.0",
+    "@botpress/skill-choice": "10.22.0",
+    "@botpress/channel-web": "10.22.0",
+    "jsdoc-api": "^4.0.3",
+    "lodash": "^4.17.10",
+    "yn": "^2.0.0"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "start-perf": "rm -f isolate* && NODE_ENV=production node --prof ./node_modules/.bin/botpress start",
+    "start-0x": "NODE_ENV=production 0x -- node ./node_modules/.bin/botpress start"
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "0x": "^4.0.12"
+  }
+}
